@@ -26,8 +26,20 @@ function App() {
 
         <Header />
         <Routes>
-          <Route path="/" element={<Home name={name} setName={setName} fetchQuestion={fetchQuestion}/>} />
-          <Route path="/quiz" element={<Quiz />} />
+          <Route path="/" element=
+          {<Home 
+            name={name} 
+            setName={setName} 
+            fetchQuestion={fetchQuestion}/>} 
+          />
+          <Route path="/quiz" element=
+          {<Quiz 
+            name={name}
+            questions={questions}
+            score={score}
+            setScore={setScore}
+            setQuestions={setQuestions}/>} 
+          />
           <Route path="/result" element={<Result />} />
         </Routes>
       </div>
