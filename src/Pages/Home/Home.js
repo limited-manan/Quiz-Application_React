@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
 
-const Home = ({ name, setName }) => {
+const Home = ({ name, setName, fetchQuestion }) => {
 
     const [category, setCategory] = useState("");
     const [difficulty, setDifficulty] = useState("");
@@ -18,6 +18,7 @@ const Home = ({ name, setName }) => {
             return;
         } else {
             setError(false);
+            fetchQuestion(category, difficulty);
             navigate("/quiz");
         }
     }
