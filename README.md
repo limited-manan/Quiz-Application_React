@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# QuizWhizzz – React Quiz Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🎯 Overview
 
-## Available Scripts
+QuizWhizzz is an engaging React-based quiz application that allows users to test their knowledge across various categories and difficulty levels. The app fetches questions from the [Open Trivia Database](https://opentdb.com/api.php) and provides an interactive user interface for a seamless quiz experience.
 
-In the project directory, you can run:
+## 🚀 Live Demo
 
-### `npm start`
+Experience the quiz application live here:  
+👉 [https://quizwhizzz.netlify.app/](https://quizwhizzz.netlify.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🧪 API Endpoint
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The application retrieves quiz questions using the following API:
 
-### `npm test`
+https://opentdb.com/api.php?amount=10${category
+ && &category=${category}}${difficulty && &difficulty=${difficulty}}&type=multiple
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+This endpoint allows dynamic fetching of 10 multiple-choice questions based on the selected category and difficulty level.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Dynamic Question Fetching**: Retrieve questions based on user-selected category and difficulty.
+- **User-Friendly Interface**: Intuitive design for a seamless quiz-taking experience.
+- **Real-Time Scoring**: Instant feedback on answers with a final score summary.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔧 Technologies Used
 
-### `npm run eject`
+- **Frontend**: React.js  
+- **Routing**: React Router DOM  
+- **State Management**: React Hooks (`useState`, `useEffect`)  
+- **Styling**: CSS  
+- **API**: Open Trivia Database
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📥 Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To run the project locally:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Clone the repository:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```bash
+   git clone https://github.com/limited-manan/Quiz-Application_React.git
